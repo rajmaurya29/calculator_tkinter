@@ -40,7 +40,7 @@ def get_equal():
         if third=='0':
             result_label.config(text="error")
         else:
-            new=int(first)/int(third)
+            new=round(int(first)/int(third),2)
             result_label.config(text=str(new))
 
 result_label=Label(root,text='',bg='black',fg='white',width=12,height=2,anchor='e')
